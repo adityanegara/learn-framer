@@ -1,0 +1,45 @@
+A) Simple Animation
+: Kebanyakan animasi akan di lakukan dengan prop
+'animate'. Ketika ada nilai yanng berubah
+pada prop 'animate' maka komponent akan secara automatis
+menganimasi target.
+
+  A.1) Syntax animation
+  : <motion.{html element} animate={{ property: value}} />
+
+  A.2) Contoh 
+  : <motion.div animate={{x: 100}}/>
+
+B) Transitions
+: Secara bawwaan, Motion akan membuat animasi yang sesuai berdasarkan 
+type dari value yang dianimasikan. Contohnya property physical seperti
+'x' atau 'scale' akan dianimasikan seperti 'spring'. Bila 'opacity'
+atau 'color' akan dianimasikan dengan 'tween'
+
+C) Enter Animation
+: Ketika component motion dibuat. Ia secara automatis akan teranimasi
+kepada value 'animate'. Ini terjadi bila props 'animate' berbeda
+dengan value 'style' atau 'initial'. Anda dapat mengatur nilai initial
+menjadi 'false' untuk disable animasi masuk.
+
+    C.1) Syntax disable enter animation
+    : <motion.{html element} animate={{property: value,...}} initial={false}/>
+
+    C.2) Contoh disable enter animation
+    : <motion.div animate={{ x: 100 }} initial={false} />
+
+D) Exit Animations
+: Dalam react, Ketika component dihapus dari DOM Tree, ia langsung dihapus. 
+Framer motion menyediakan component 'AnimatePresence' untuk membuat component
+di DOM ketika ia melakukan animasi keluar.
+
+E) Keyframes
+: Nilai pada 'animate' dapat pula diisikan daftar keyframes. Dengan begini,
+value akan dianimasikan berurutan. Kita juga dapat mengisikan keyframe dengan
+nilai sekarang dengan mengisikan null.
+
+  E.1) Syntax
+  : <motion.{html element} animate={{property: [value, value, ...]}} />
+
+  E.2) Contoh
+  : <motion.div animate={{ x: [0, 100, 0] }}/>
