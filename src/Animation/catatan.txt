@@ -74,3 +74,9 @@ G) Variants
   : Secara default, semua animasi akan mulai secara bersamaan. Tetapi dengan menggunakan
   variants, kita mendapatkan akses pada props transition tambahan seperti 'when', 'delayChildren',
   dan 'staggerChildren'. yang dapat kita lakukan untuk mengorchestrasikan exekusi dari animasi.
+
+  G.5) Dynamic Variants
+  : Anda dapat memberikan custom props kepada variants dengan
+  property 'custom'. 
+
+  

@@ -9,12 +9,13 @@ import Variants from "./Animation/Variants/Accordion";
 import SimpleVariants from "./Animation/Variants/SimpleVariants";
 import PropagationVariants from "./Animation/Variants/PropagationVariants";
 import Orchestration from "./Animation/Variants/Orchestration";
+import DynamicVariants from "./Animation/Variants/DynamicVariants";
 import './index.css';
 
 const App = () => {
   return (
     <div className="container">
-      <Orchestration />
+      <DynamicVariants />
     </div>
   );
 };
