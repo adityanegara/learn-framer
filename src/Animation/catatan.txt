@@ -69,3 +69,8 @@ G) Variants
   : Jika component motion memiliki children, perubahan pada variant akan 
   mengalur kebawah melalui component hierarchy. Sampai ada component children
   mendefinisikan property 'animate'
+
+  G.4) Orchestration
+  : Secara default, semua animasi akan mulai secara bersamaan. Tetapi dengan menggunakan
+  variants, kita mendapatkan akses pada props transition tambahan seperti 'when', 'delayChildren',
+  dan 'staggerChildren'. yang dapat kita lakukan untuk mengorchestrasikan exekusi dari animasi.

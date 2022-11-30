@@ -8,12 +8,13 @@ import Gesture from "./Animation/Gesture/Gesture";
 import Variants from "./Animation/Variants/Accordion";
 import SimpleVariants from "./Animation/Variants/SimpleVariants";
 import PropagationVariants from "./Animation/Variants/PropagationVariants";
+import Orchestration from "./Animation/Variants/Orchestration";
 import './index.css';
 
 const App = () => {
   return (
     <div className="container">
-      <PropagationVariants />
+      <Orchestration />
     </div>
   );
 };
