@@ -43,3 +43,29 @@ nilai sekarang dengan mengisikan null.
 
   E.2) Contoh
   : <motion.div animate={{ x: [0, 100, 0] }}/>
+
+F) Gesture Animations
+: Framer Motion memiliki shortcut untuk menganimasi gesture seperti
+hover,tap, drag, focus, dan inView.
+
+G) Variants
+: Cara untuk membuat animasi dengan cara deklaratif. 
+
+  G.1) Dengan cara biasa
+  : <motion.div animate={{ x: 0] }} exit={{x: 100}}/>
+
+  G.2) Dengan cara variants
+  : const variants : Variants = {
+    entry: {
+      x: 0
+    },
+    exit: {
+      x: 100
+    }
+  }
+  <motion.div/ variants={variants} animate="entry" exit="exit">
+
+  G.3) Propagation
+  : Jika component motion memiliki children, perubahan pada variant akan 
+  mengalur kebawah melalui component hierarchy. Sampai ada component children
+  mendefinisikan property 'animate'
